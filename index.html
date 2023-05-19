@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>CIRCA Pintig</title>
+</head>
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <!-- <img src="/img/circa-pintig-s2ivef1e.ofa.jpg" width="50px" height="50px"></svg> -->
+      <a href="#">CIRCA PINTIG</a>
+    </div>
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="donate_btn">Donate</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <li><a href="#">About</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="donate_btn">Donate</a></li>
+  </div>
+
+</header>
+<hr class="navhr">
+<body>
+  <main>
+    <section id="one">
+    
+      <div class="container">
+        <div class="text">
+          <h1>Our Vision</h1>
+          <p>Engage communities through the arts to build thriving and empowered societies where collective destinies are determined. Uphold human rights, promote life, freedom, justice, and nurture individual potentials. Engage communities through the arts to build thriving and empowered societies where collective destinies are determined. Uphold human rights, promote life, freedom, justice, and nurture individual potentials. Engage communities through the arts to build thriving and empowered societies where collective destinies are determined. Uphold human rights, promote life, freedom, justice, and nurture individual potentials.</p>
+        </div>
+        <!-- <div class="picture">
+          <img src="/img/321243450_635905684993695_1340518231009829348_n.jpg" alt="temp"/>
+        </div> -->
+    </section>
+    <section id="two">
+    
+      <div class="container">
+ 
+        <!-- <div class="picture">
+          <img src="/img/76902299_2437313236395000_2262807011706011648_n.jpg" alt="temp"/>
+        </div> -->
+        <div class="text">
+          <h1>Our Mission</h1>
+       
+          <p>Educate, mobilize, and organize primarily immigrant and their families by providing community arts-based and community-centered intergenerational programs and services. Educate, mobilize, and organize primarily immigrant and their families by providing community arts-based and community-centered intergenerational programs and services.Educate, mobilize, and organize primarily immigrant and their families by providing community arts-based and community-centered intergenerational programs and services.Educate, mobilize, and organize primarily immigrant and their families by providing community arts-based and community-centered intergenerational programs and services.</p>
+        </div>
+
+      
+   
+    </section>
+    <section id="three">
+      <div class="container">
+        <h1>Our People</h1>
+      </div>
+    </section>
+    
+  </main>
+
+  <script> 
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function() {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
+</body>
+</html>

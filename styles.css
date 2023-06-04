@@ -225,12 +225,10 @@ hr {
         padding: 2rem 2rem;
         padding-top: 60px;
     }
+    
     .container .text {
-        /* outline: auto; */
-        max-width: 400px;
-        height: auto;
-        text-align: left;
-      }
+        padding-right: 2rem;
+    }
     
 }
 

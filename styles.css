@@ -8,7 +8,7 @@
 body {
    
     height: 100vh;
-    background-color: #C8BFC7;
+    background-color: white;
 
 }
 
@@ -28,16 +28,15 @@ a {
 
 }
 
-a:hover {
-
-}
-
 /* HEADER */
 header {
+
+
     position: fixed;
-    padding: 0 12rem;
-    background-color: #C8BFC7;
+    padding: 0 2rem;
+    background-color: child;
     width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
 }
 
@@ -50,7 +49,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #C8BFC7;
+    background-color: white;
     
 }
 
@@ -85,16 +84,21 @@ hr {
     gap: 2rem;
 }
 
+.navbar .links a:hover {
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
 .navbar .toggle_btn {
-    color: #5A2328;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .donate_btn {
-    background-color: #5A2328;
-    color:#fff;
+    background-color: orange;
+    color:black;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -114,17 +118,22 @@ hr {
 }
 /* DROPDOWN MENU */
 .dropdown_menu {
-    display:none;
+    display: none;
     position: absolute;
-    right:2rem;
+    left: 0px;
     top: 60px;
-    height: 0;
-    width: 300px;
+    width: 100%;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 2rem 2rem;
+   
+}
+
+.dropdown_menu.open {
+    display: inline-block;
 }
 
 .dropdown_menu li {
@@ -140,97 +149,67 @@ hr {
     justify-content: center;
 }
 
-.dropdown_menu.open {
-    height: 240px;
+
+
+
+#intro .container {
+    padding-top: 90px !important;
+    &h1 {
+        padding: 10 rem;
+    }
 }
 
-/* HERO */
-#one {
-    background:;
-    max-width: 100%;
-    height: auto;
-}
-.text hr {
-    width: 1rem;
-}
 .container {
     /* outline: auto; */
-    padding: 2rem 12rem;
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: auto auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 90px;
-    justify-content: space-between;
+    padding: 2rem 2rem;
+    
     
 }
-  .container .text {
-    width: 500px;
-  }
-.container h1 {
-    text-align: left;
-}
-.container img {
-    /* outline: auto; */
-    border-radius: 50px;
-    width: 900px;
-    height: auto;
+
+.navbar .links,
+.navbar .donate_btn {
+    display: none;
 }
 
-  
-  
-  
-  
+.navbar .toggle_btn {
+    display: block;
+}
 
 
-/* RESPONSIVE DESIGN */
-@media(max-width: 992px) {
-    header {
-        padding: 0 4rem;
-    }
+
+
+  
+/*RESPONSIVE DESIGN CONTENT *NAV MENU BELOW* */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .navbar .links,
     .navbar .donate_btn {
-        display: none;
+        display: flex;
     }
 
     .navbar .toggle_btn {
-        display: block;
+        display: none;
     }
 
     .dropdown_menu {
-        display: block;
+        display: none !important;
     }
-    .container {
-        display: block;
 
-        padding: 2rem 4rem;
-        padding-top: 60px;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #intro .container {
+        text-align: center;
     }
 }
 
-@media(max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-    header {
-        padding: 0 2rem;
-    }
-    .container {
-        display: block;
-        
-        padding: 2rem 2rem;
-        padding-top: 60px;
-    }
-    
-    .container .text {
-        padding-right: 2rem;
-    }
-    
-}
+
 
 
 /* width */

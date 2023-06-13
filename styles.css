@@ -140,6 +140,16 @@ header {
 }
 
 
+footer {
+    margin-top: 2rem;
+    background: #111;
+    height: 20vh;
+    width: 100%;
+    color: #fff;
+
+
+}
+    
 
 
 #intro .container {
@@ -181,10 +191,16 @@ header {
         text-align: center;
     }
 }
-
+#events .event-container {
+    text-align: center;
+    margin-top: 1rem;
+    & div {
+        padding-top: 1rem;
+    }
+}
 .container {
     /* outline: auto; */
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     
     & h1 {
         text-align: initial;
@@ -214,6 +230,7 @@ header {
 
 #events .event-container {
     padding: 0rem 2rem;
+    align-items: center;
     & h2 {
         font-size: 1rem;
     }

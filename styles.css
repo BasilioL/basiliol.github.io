@@ -198,6 +198,15 @@ footer {
         padding-top: 1rem;
     }
 }
+
+#our-mission-vision .container {
+    & div:nth-child(1) {
+        padding-top: 1rem;
+    }
+    & h1 {
+        padding-bottom: 0rem;
+    }
+}
 .container {
     /* outline: auto; */
     padding: 1rem 2rem;
@@ -334,11 +343,15 @@ footer {
         }
     }
     
-    .home-wrapper {
+    #our-mission-vision .container {
+        padding: 0rem 14rem; 
+        padding-bottom: 2rem;
         display: flex;
         justify-content: space-between;
-        padding: 0rem 12rem;
+        
+        margin: auto;
         flex-basis: 0;
+        
 
         & .container {
             height: 50px;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>CIRCA Pintig</title>
+</head>
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <!-- <img src="/img/circa-pintig-s2ivef1e.ofa.jpg" width="50px" height="50px"></svg> -->
+      <a href="/">CIRCA-PINTIG</a>
+    </div>
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li><a href="/programs.html">Programs</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="/get-invovled.html">Get Involved</a></li>
+    </ul>
+    <a href="#" class="donate_btn">Donate</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <li><a href="#">About</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="/get-invovled.html">Get Involved</a></li>
+      <li><a href="#" class="donate_btn">Donate</a></li>
+  </div>
+
+</header>
+<body>
+  <main>
+    <section id="get-involved">
+      <div class="container">
+        <div>
+          <h1>Volunteer, Engage, Take Action</h1>
+          <p>CIRCA-Pintig would love to have you participate in any of its acitivies and events. Here are a few ways that you can be apart of our work:</p>
+          <ul>
+            <li>Help document activities and community events through photos, videos and voice recordings</li>
+            <li>Get trained and conduct interviews and collect stories</li>
+            <li>Be part of a playwriting collective that transforms stories into monologues and short performance pieces</li>
+            <li>Assist in developing promotional materials for print and social media</li>
+            <li>Translate stories and relevant documents from English to Tagalog and vice-versa</li>
+            <li>Initiate or facilitate community dialogues or conversations with elected officials about specific issues</li>
+            </ul>
+            <p><em>There is room for everyone come on board!</em></p>
+        </div>
+          <img src="">
+        </div>
+        <div>
+       
+      </div>
+    </section>
+  </main>
+
+  <section id="events">
+    <div class="event-container">
+
+    </div>
+  </section>
+
+  <script> 
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function() {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
+</body>
+</html>

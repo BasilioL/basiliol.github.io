@@ -162,6 +162,25 @@ header {
         margin-top: 2rem;
     }
 }
+#get-involved .container {
+    padding-top: 90px !important;
+    
+    
+
+    & ul {
+        padding-top: 1rem;
+        padding-left:1rem;
+    }
+    & li {
+        list-style-type: disc;
+        padding-top: .5rem;
+    }
+
+    & p:nth-child(4) {
+        padding-top: 1rem;
+        text-align: center;
+    }
+}
 
 .container {
     /* outline: auto; */
@@ -187,9 +206,18 @@ header {
     display: block;
 }
 
+.home-wrapper {
+    & h1 {
+        text-align: initial;
+    }
+}
 
-
-
+#events .event-container {
+    padding: 0rem 2rem;
+    & h2 {
+        font-size: 1rem;
+    }
+}
   
 /*RESPONSIVE DESIGN CONTENT *NAV MENU BELOW* */
 
@@ -208,13 +236,22 @@ header {
         display: none !important;
     }
 
+    
+
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 0rem 4rem;
+    }
+    #intro .container {
+        padding: 0rem 6rem;
+    }
     .home-wrapper {
         display: flex;
         align-items: initial;
         justify-content: initial;
+        padding: 0rem 4rem;
         & h1 p {
             text-align: inital;
         }
@@ -224,6 +261,41 @@ header {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+   
+    
+    /* .navbar {
+        padding: 0rem 12rem;
+    }
+
+    #intro .container {
+        padding: 0rem 14rem; 
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin: auto;
+        flex-basis: 0;
+        & img {
+            margin-top: 0;
+            width: 50%;
+            height: 100%;
+        }
+    }
+    
+    .home-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 12rem;
+        flex-basis: 0;
+
+        & .container {
+            height: 50px;
+        }
+
+    } */
+}
+
+@media only screen and (min-width: 1600px) {
    
     
     .navbar {
@@ -250,6 +322,10 @@ header {
         justify-content: space-between;
         padding: 0rem 12rem;
         flex-basis: 0;
+
+        & .container {
+            height: 50px;
+        }
 
     }
 }
